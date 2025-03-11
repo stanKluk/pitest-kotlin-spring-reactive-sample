@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>SuspendClass.kt</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.fsk</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import kotlinx.coroutines.delay</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.springframework.stereotype.Component</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import kotlin.system.measureTimeMillis</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>class SuspendClass {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_9'/>
+9
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_9'>5</a>
+<span>
+
+1. callSomethingUseful : removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED<br/>
+
+2. callSomethingUseful : removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED<br/>
+
+3. callSomethingUseful : removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED<br/>
+
+4. callSomethingUseful : replaced return value with null for com/fsk/SuspendClass::callSomethingUseful &rarr; KILLED<br/>
+
+5. callSomethingUseful : replaced return value with null for com/fsk/SuspendClass::callSomethingUseful &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    suspend fun callSomethingUseful(): Int {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        var result = 0</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        val time = measureTimeMillis {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_12'/>
+12
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_12'>1</a>
+<span>
+
+1. callSomethingUseful : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            val one = doSomethingUsefulOne()</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_13'/>
+13
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_13'>1</a>
+<span>
+
+1. callSomethingUseful : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            val two = doSomethingUsefulTwo()</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_14'/>
+14
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_14'>1</a>
+<span>
+
+1. callSomethingUseful : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            result = one + two</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_16'/>
+16
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_16'>1</a>
+<span>
+
+1. callSomethingUseful : removed call to java/io/PrintStream::println &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        println(&#34;Completed in $time ms&#34;)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_17'>1</a>
+<span>
+
+1. callSomethingUseful : replaced return value with null for com/fsk/SuspendClass::callSomethingUseful &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return result</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_20'/>
+20
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_20'>3</a>
+<span>
+
+1. doSomethingUsefulOne : removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED<br/>
+
+2. doSomethingUsefulOne : removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED<br/>
+
+3. doSomethingUsefulOne : replaced return value with null for com/fsk/SuspendClass::doSomethingUsefulOne &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    private suspend fun doSomethingUsefulOne(): Int {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_21'/>
+21
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_21'>1</a>
+<span>
+
+1. doSomethingUsefulOne : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        delay(1000L) // pretend we are doing something useful here</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_22'/>
+22
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_22'>1</a>
+<span>
+
+1. doSomethingUsefulOne : replaced return value with null for com/fsk/SuspendClass::doSomethingUsefulOne &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return 13</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_25'/>
+25
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_25'>3</a>
+<span>
+
+1. doSomethingUsefulTwo : removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED<br/>
+
+2. doSomethingUsefulTwo : removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED<br/>
+
+3. doSomethingUsefulTwo : replaced return value with null for com/fsk/SuspendClass::doSomethingUsefulTwo &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>    private suspend fun doSomethingUsefulTwo(): Int {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_26'/>
+26
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_26'>1</a>
+<span>
+
+1. doSomethingUsefulTwo : negated conditional &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        delay(1000L) // pretend we are doing something useful here, too</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_27'/>
+27
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_27'>1</a>
+<span>
+
+1. doSomethingUsefulTwo : replaced return value with null for com/fsk/SuspendClass::doSomethingUsefulTwo &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return 29</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@2474f125_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> replaced return value with null for com/fsk/SuspendClass::callSomethingUseful &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> replaced return value with null for com/fsk/SuspendClass::callSomethingUseful &rarr; KILLED</span>
+</div> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>none</span></span> removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[113],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[113],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[113],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</li> 
+</ul>
+</div></div> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>none</span></span> removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[171],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[171],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[171],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</li> 
+</ul>
+</div></div> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>none</span></span> removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[44],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[44],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[44],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_12'>12</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_12'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_13'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_14'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_16'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintStream::println &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[204],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[204],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[204],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> replaced return value with null for com/fsk/SuspendClass::callSomethingUseful &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_20'>20</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_20'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>doSomethingUsefulOne<br/><b>Killed by : </b>none</span></span> removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulOne,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[44],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulOne,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[44],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulOne,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[44],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</li> 
+</ul>
+</div></div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>doSomethingUsefulOne<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> replaced return value with null for com/fsk/SuspendClass::doSomethingUsefulOne &rarr; KILLED</span>
+</div> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>doSomethingUsefulOne<br/><b>Killed by : </b>none</span></span> removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulOne,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[63],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulOne,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[63],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulOne,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[63],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_21'>21</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_21'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>doSomethingUsefulOne<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_22'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>doSomethingUsefulOne<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> replaced return value with null for com/fsk/SuspendClass::doSomethingUsefulOne &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_25'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>doSomethingUsefulTwo<br/><b>Killed by : </b>none</span></span> removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulTwo,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[63],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulTwo,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[63],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulTwo,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[63],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</li> 
+</ul>
+</div></div> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>doSomethingUsefulTwo<br/><b>Killed by : </b>none</span></span> removed call to kotlin/ResultKt::throwOnFailure &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulTwo,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[44],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulTwo,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[44],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulTwo,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[44],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</li> 
+</ul>
+</div></div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>doSomethingUsefulTwo<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> replaced return value with null for com/fsk/SuspendClass::doSomethingUsefulTwo &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_26'>26</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_26'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>doSomethingUsefulTwo<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulTwo,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[55],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulTwo,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[55],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=doSomethingUsefulTwo,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[55],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_27'>27</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_27'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>doSomethingUsefulTwo<br/><b>Killed by : </b>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</span></span> replaced return value with null for com/fsk/SuspendClass::doSomethingUsefulTwo &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@2474f125_35'>35</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@2474f125_35'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>callSomethingUseful<br/><b>Killed by : </b>none</span></span> Replaced long subtraction with addition &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[194],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[194],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.fsk.SuspendClass,-method=callSomethingUseful,-methodDesc=(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;],-indexes=[194],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()]</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.fsk.SuspendClassTest.[engine:junit-jupiter]/[class:com.fsk.SuspendClassTest]/[method:test something useful()] (2020 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.18.2
+
+</body>
+</html>
